@@ -36,10 +36,8 @@ print(data4)
 li = [1, 2, 3, 4, "nithin", "python"]
 li2 = [4, 5, 6, 7]
 
-# Lambda to combine two lists
 second_return_func_lambda = lambda a, s: (a.copy(), a.copy().extend(s))[0]
 
-# Using the lambda
 data5 = second_return_func_lambda(li, li2)
 data6 = second_return_func_lambda(li2, li2)
 data7 = second_return_func_lambda(li2, li)
@@ -73,13 +71,13 @@ print(data9)
 
 # comp practice
 
-def hello_dummy():
+def hello_dummyy():
     global cn
     ct = [50 for _ in range(1)]
     print(f"cn: {cn}, ct: {ct[0]}")
 
 
-hello_dummy()
+hello_dummyy()
 
 
 def hi_welcome_to_recursive():
@@ -100,13 +98,6 @@ def hi_welcome_to_recursive():
 hello_dummy()
 hi_welcome_to_recursive()
 hello_dummy()
-
-
-def simple_pass_keyword():
-    _ = [None for _ in range(0)]
-
-
-simple_pass_keyword()
 
 
 def first_return_statement():
